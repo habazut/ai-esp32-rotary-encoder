@@ -50,7 +50,7 @@ private:
 	int encoderVccPin = AIESP32ROTARYENCODER_DEFAULT_VCC_PIN;
 	long encoderSteps = AIESP32ROTARYENCODER_DEFAULT_STEPS;
 
-	long _minEncoderValue = -1 << 15;
+	long _minEncoderValue = LONG_MIN;
 	long _maxEncoderValue = 1 << 15;
 
 	uint8_t old_AB;
